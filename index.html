@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Json user management</title>
     <link rel="icon" href="./img/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
+        integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=='
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.js'
+        integrity='sha512-vHNHepeQWwAggJlhEk932jRS5sNdn/Nn4F+w4TpXW5dA+04qnd3e7YpfXo6auWhFG6z3FVhmScG4ovtF+qYeZw=='
+        crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
+        integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
+        crossorigin='anonymous' />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
 </head>
+
 <body>
-    
+
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <img src="./img/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+                    alt="Logo">
+                <h2>Users</h2>
+            </div>
+            <div class="controlContainer">
+                <div id="themeBtn"><i class="fa-solid fa-sun"></i></div>
+                <div id="addUsers"><i class="fa-solid fa-user-plus"></i></div>
+            </div>
+        </header>
+        <div class="UsersContainer">
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
