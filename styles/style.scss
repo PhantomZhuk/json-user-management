@@ -5,6 +5,157 @@
     font-family: "Montserrat";
 }
 
+.addUsersContainer {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(90, 98, 104, 0.3);
+    backdrop-filter: blur(12px);
+
+    .formAddUser {
+        width: 400px;
+        min-height: 600px;
+        background-color: #5a6268;
+        border-radius: 10px;
+        padding: 20px;
+
+        .formHeader {
+            display: flex;
+            justify-content: flex-end;
+
+            i {
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .inputContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .nameInpCont {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+
+                input {
+                    width: 160px;
+                    outline: none;
+                    padding-left: 10px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 2px solid #fff;
+                    background: transparent;
+                    transition: 0.1s ease;
+                    font-size: 15px;
+                    color: #fff;
+                }
+
+                .namePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    margin: 0 20px;
+                    background-color: #5a6268;
+                    transition: 0.2s ease;
+                }
+
+                .userNamePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    margin: 0 200px;
+                    background-color: #5a6268;
+                    transition: 0.2s ease;
+                }
+            }
+
+            .input {
+                width: 340px;
+                outline: none;
+                padding-left: 10px;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid #fff;
+                background: transparent;
+                transition: 0.1s ease;
+                font-size: 15px;
+                color: #fff;
+                margin: 10px;
+            }
+
+            .emailPlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 80px 260px 0 0;
+            }
+
+            p {
+                color: #fff;
+                margin: 10px;
+            }
+            
+            .phonePlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 140px 248px 0 0;
+            }
+
+            .websitePlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 200px 238px 0 0;
+            }
+
+            .companyNamePlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 300px 173px 0 0;
+            }
+
+            .catchPhrasePlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 360px 195px 0 0;
+            }
+
+            .bsPlaceholder {
+                position: absolute;
+                font-size: 16px;
+                color: #f0ffff;
+                background-color: #5a6268;
+                transition: 0.2s ease;
+                margin: 420px 280px 0 0;
+            }
+        }
+    }
+}
+
 .wrap {
     width: 100%;
     min-height: 100vh;
@@ -53,7 +204,7 @@
             }
         }
     }
-    
+
     .UsersContainer {
         width: 100%;
         min-height: 90vh;
@@ -95,7 +246,7 @@
                         font-size: 52px;
                     }
                 }
-                
+
             }
 
             p {
@@ -114,7 +265,8 @@
                 justify-content: space-between;
                 align-items: center;
                 background-color: #7b868e;
-                padding: 10px;;
+                padding: 10px;
+                ;
                 border-radius: 10px 10px 0 0;
 
                 p {

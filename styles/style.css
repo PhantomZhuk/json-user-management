@@ -5,6 +5,142 @@
   font-family: "Montserrat";
 }
 
+.addUsersContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(90, 98, 104, 0.3);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.addUsersContainer .formAddUser {
+  width: 400px;
+  min-height: 600px;
+  background-color: #5a6268;
+  border-radius: 10px;
+  padding: 20px;
+}
+.addUsersContainer .formAddUser .formHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+.addUsersContainer .formAddUser .formHeader i {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.addUsersContainer .formAddUser .inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.addUsersContainer .formAddUser .inputContainer .nameInpCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.addUsersContainer .formAddUser .inputContainer .nameInpCont input {
+  width: 160px;
+  outline: none;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 0.1s ease;
+  font-size: 15px;
+  color: #fff;
+}
+.addUsersContainer .formAddUser .inputContainer .nameInpCont .namePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  margin: 0 20px;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+}
+.addUsersContainer .formAddUser .inputContainer .nameInpCont .userNamePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  margin: 0 200px;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+}
+.addUsersContainer .formAddUser .inputContainer .input {
+  width: 340px;
+  outline: none;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 0.1s ease;
+  font-size: 15px;
+  color: #fff;
+  margin: 10px;
+}
+.addUsersContainer .formAddUser .inputContainer .emailPlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 80px 260px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer p {
+  color: #fff;
+  margin: 10px;
+}
+.addUsersContainer .formAddUser .inputContainer .phonePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 140px 248px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .websitePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 200px 238px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyNamePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 300px 173px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .catchPhrasePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 360px 195px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .bsPlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #5a6268;
+  transition: 0.2s ease;
+  margin: 420px 280px 0 0;
+}
+
 .wrap {
   width: 100%;
   min-height: 100vh;

@@ -78,3 +78,109 @@ $(`.wrap`).click((e) => {
     };
 });
 
+$(`.addUsersContainer`).hide();
+
+$(`#addUsers`).click(()=>{
+    $(`.addUsersContainer`).show();
+});
+
+$(`.namePlaceholder`).click(()=>{
+    $(`#nameInput`).focus();
+});
+
+$(`#nameInput`).focus(()=>{
+    $(`.namePlaceholder`).css({
+        'margin': '0 0 35px 7px',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.userNamePlaceholder`).click(()=>{
+    $(`#userNameInput`).focus();
+});
+
+$(`#userNameInput`).focus(()=>{
+    $(`.userNamePlaceholder`).css({
+        'margin': '0 200px 35px 187px',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.emailPlaceholder`).click(()=>{
+    $(`#emailInput`).focus();
+});
+
+$(`#emailInput`).focus(()=>{
+    $(`.emailPlaceholder`).css({
+        'margin': '63px 265px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.phonePlaceholder`).click(()=>{
+    $(`#phoneInput`).focus();
+});
+
+$(`#phoneInput`).focus(()=>{
+    $(`.phonePlaceholder`).css({
+        'margin': '123px 260px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.websitePlaceholder`).click(()=>{
+    $(`#websiteInput`).focus();
+});
+
+$(`#websiteInput`).focus(()=>{
+    $(`.websitePlaceholder`).css({
+        'margin': '182px 250px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+
+$(`.companyNamePlaceholder`).click(()=>{
+    $(`#companyNameInput`).focus();
+});
+
+$(`#companyNameInput`).focus(()=>{
+    $(`.companyNamePlaceholder`).css({
+        'margin': '280px 190px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.catchPhrasePlaceholder`).click(()=>{
+    $(`#catchPhraseInput`).focus();
+});
+
+$(`#catchPhraseInput`).focus(()=>{
+    $(`.catchPhrasePlaceholder`).css({
+        'margin': '340px 215px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.bsPlaceholder`).click(()=>{
+    $(`#bsInput`).focus();
+});
+
+$(`#bsInput`).focus(()=>{
+    $(`.bsPlaceholder`).css({
+        'margin': '400px 290px 0 0',
+        'padding': '0 10px',
+        'font-size': '14px'
+    })
+});
+
+$(`.closeAddUsersCont`).click(()=>{
+    $(`.addUsersContainer`).hide();
+});
