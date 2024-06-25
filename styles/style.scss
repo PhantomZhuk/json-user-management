@@ -18,10 +18,12 @@
 
     .formAddUser {
         width: 400px;
-        min-height: 600px;
+        min-height: 400px;
         background-color: #5a6268;
         border-radius: 10px;
         padding: 20px;
+        box-shadow: 0 1px 5px #7b868e;
+
 
         .formHeader {
             display: flex;
@@ -74,7 +76,7 @@
                     position: absolute;
                     font-size: 16px;
                     color: #f0ffff;
-                    margin: 0 200px;
+                    margin-left: 200px;
                     background-color: #5a6268;
                     transition: 0.2s ease;
                 }
@@ -103,11 +105,6 @@
                 margin: 80px 260px 0 0;
             }
 
-            p {
-                color: #fff;
-                margin: 10px;
-            }
-            
             .phonePlaceholder {
                 position: absolute;
                 font-size: 16px;
@@ -126,31 +123,104 @@
                 margin: 200px 238px 0 0;
             }
 
-            .companyNamePlaceholder {
-                position: absolute;
-                font-size: 16px;
-                color: #f0ffff;
-                background-color: #5a6268;
-                transition: 0.2s ease;
-                margin: 300px 173px 0 0;
+            .companyAddUserBtn,
+            .addressAddUserBtn {
+                color: #fff;
+                margin: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #7b868e;
+                border-radius: 10px 10px 0 0;
             }
 
-            .catchPhrasePlaceholder {
-                position: absolute;
-                font-size: 16px;
-                color: #f0ffff;
-                background-color: #5a6268;
-                transition: 0.2s ease;
-                margin: 360px 195px 0 0;
+            .companyAddUserContainer,
+            .addressAddUserContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #7b868e;
+                border-radius: 0 0 10px 10px;
+
+                .companyNamePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 20px 173px 0 0;
+                }
+
+                .catchPhrasePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 80px 195px 0 0;
+                }
+
+                .bsPlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 140px 280px 0 0;
+                }
+
+
+                .streetPlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 20px 250px 0 0;
+                }
+
+                .suitePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 80px 260px 0 0;
+                }
+
+                .cityPlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 140px 270px 0 0;
+                }
+
+                .zipcodePlaceholder {
+                    position: absolute;
+                    font-size: 16px;
+                    color: #f0ffff;
+                    background-color: #7b868e;
+                    transition: 0.2s ease;
+                    margin: 200px 235px 0 0;
+                }
             }
 
-            .bsPlaceholder {
-                position: absolute;
-                font-size: 16px;
-                color: #f0ffff;
-                background-color: #5a6268;
-                transition: 0.2s ease;
-                margin: 420px 280px 0 0;
+
+            #addUser {
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: none;
+                background-color: #7b868e;
+                margin-top: 20px;
+                cursor: pointer;
+                color: #29ef3d;
+                box-shadow: 0 0 10px 1px #29ef3d;
             }
         }
     }
@@ -194,7 +264,7 @@
                 color: #fff;
             }
 
-            #addUsers {
+            #openUsersConatiner {
                 margin: 15px;
                 cursor: pointer;
                 padding: 12px;

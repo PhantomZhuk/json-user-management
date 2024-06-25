@@ -19,10 +19,11 @@
 }
 .addUsersContainer .formAddUser {
   width: 400px;
-  min-height: 600px;
+  min-height: 400px;
   background-color: #5a6268;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 1px 5px #7b868e;
 }
 .addUsersContainer .formAddUser .formHeader {
   display: flex;
@@ -71,7 +72,7 @@
   position: absolute;
   font-size: 16px;
   color: #f0ffff;
-  margin: 0 200px;
+  margin-left: 200px;
   background-color: #5a6268;
   transition: 0.2s ease;
 }
@@ -96,10 +97,6 @@
   transition: 0.2s ease;
   margin: 80px 260px 0 0;
 }
-.addUsersContainer .formAddUser .inputContainer p {
-  color: #fff;
-  margin: 10px;
-}
 .addUsersContainer .formAddUser .inputContainer .phonePlaceholder {
   position: absolute;
   font-size: 16px;
@@ -116,29 +113,100 @@
   transition: 0.2s ease;
   margin: 200px 238px 0 0;
 }
-.addUsersContainer .formAddUser .inputContainer .companyNamePlaceholder {
-  position: absolute;
-  font-size: 16px;
-  color: #f0ffff;
-  background-color: #5a6268;
-  transition: 0.2s ease;
-  margin: 300px 173px 0 0;
+.addUsersContainer .formAddUser .inputContainer .companyAddUserBtn,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserBtn {
+  color: #fff;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #7b868e;
+  border-radius: 10px 10px 0 0;
 }
-.addUsersContainer .formAddUser .inputContainer .catchPhrasePlaceholder {
-  position: absolute;
-  font-size: 16px;
-  color: #f0ffff;
-  background-color: #5a6268;
-  transition: 0.2s ease;
-  margin: 360px 195px 0 0;
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7b868e;
+  border-radius: 0 0 10px 10px;
 }
-.addUsersContainer .formAddUser .inputContainer .bsPlaceholder {
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .companyNamePlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .companyNamePlaceholder {
   position: absolute;
   font-size: 16px;
   color: #f0ffff;
-  background-color: #5a6268;
+  background-color: #7b868e;
   transition: 0.2s ease;
-  margin: 420px 280px 0 0;
+  margin: 20px 173px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .catchPhrasePlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .catchPhrasePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 80px 195px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .bsPlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .bsPlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 140px 280px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .streetPlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .streetPlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 20px 250px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .suitePlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .suitePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 80px 260px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .cityPlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .cityPlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 140px 270px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer .companyAddUserContainer .zipcodePlaceholder,
+.addUsersContainer .formAddUser .inputContainer .addressAddUserContainer .zipcodePlaceholder {
+  position: absolute;
+  font-size: 16px;
+  color: #f0ffff;
+  background-color: #7b868e;
+  transition: 0.2s ease;
+  margin: 200px 235px 0 0;
+}
+.addUsersContainer .formAddUser .inputContainer #addUser {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #7b868e;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #29ef3d;
+  box-shadow: 0 0 10px 1px #29ef3d;
 }
 
 .wrap {
@@ -176,7 +244,7 @@
   border-radius: 10px;
   color: #fff;
 }
-.wrap header .controlContainer #addUsers {
+.wrap header .controlContainer #openUsersConatiner {
   margin: 15px;
   cursor: pointer;
   padding: 12px;

@@ -40,13 +40,33 @@
                 <div class="phonePlaceholder">Phone</div>
                 <input type="text" class="input" id="websiteInput">
                 <div class="websitePlaceholder">Website</div>
-                <p>Company</p>
-                <input type="text" class="input" id="companyNameInput">
-                <div class="companyNamePlaceholder">Name company</div>
-                <input type="text" class="input" id="catchPhraseInput">
-                <div class="catchPhrasePlaceholder">Catch phrase</div>
-                <input type="text" class="input" id="bsInput">
-                <div class="bsPlaceholder">bs</div>
+                <div class="companyAddUserBtn">
+                    <p>Company</p>
+                    <span><i class="fa-solid close fa-caret-down openCompanyContainer"></i></span>
+                </div>
+                <div class="companyAddUserContainer">
+                    <input type="text" class="input" id="companyNameInput">
+                    <div class="companyNamePlaceholder">Name company</div>
+                    <input type="text" class="input" id="catchPhraseInput">
+                    <div class="catchPhrasePlaceholder">Catch phrase</div>
+                    <input type="text" class="input" id="bsInput">
+                    <div class="bsPlaceholder">bs</div>
+                </div>
+                <div class="addressAddUserBtn">
+                    <p>Address</p> 
+                    <span><i class="fa-solid close fa-caret-down openAddressContainer"></i></span>
+                </div>
+                <div class="addressAddUserContainer">
+                    <input type="text" class="input" id="streetInput">
+                    <div class="streetPlaceholder">Street</div>
+                    <input type="text" class="input" id="suiteInput">
+                    <div class="suitePlaceholder">Suite</div>
+                    <input type="text" class="input" id="cityInput">
+                    <div class="cityPlaceholder">City</div>
+                    <input type="text" class="input" id="zipcodeInput">
+                    <div class="zipcodePlaceholder">Zipcode</div>
+                </div>
+                <button id="addUser"><i class="fa-solid fa-user-plus"></i> Add user</button>
             </div>
         </div>
     </div>
@@ -60,7 +80,7 @@
             </div>
             <div class="controlContainer">
                 <div id="themeBtn"><i class="fa-solid fa-sun"></i></div>
-                <div id="addUsers"><i class="fa-solid fa-user-plus"></i></div>
+                <div id="openUsersConatiner"><i class="fa-solid fa-user-plus"></i></div>
             </div>
         </header>
         <div class="UsersContainer">
