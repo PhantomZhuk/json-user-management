@@ -5,6 +5,20 @@
     font-family: "Montserrat";
 }
 
+.popup {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #5a6268;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    right: 10px;
+    bottom: 10px;
+}
+
 .addUsersContainer {
     width: 100%;
     min-height: 100vh;

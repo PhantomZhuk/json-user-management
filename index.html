@@ -23,6 +23,10 @@
 
 <body>
 
+    <div class="popup">
+        <h2>Added new user</h2>
+    </div>
+
     <div class="addUsersContainer">
         <div class="formAddUser">
             <div class="formHeader"><i class="fa-solid fa-xmark closeAddUsersCont"></i></div>
@@ -30,13 +34,13 @@
                 <div class="nameInpCont">
                     <input type="text" id="nameInput">
                     <div class="namePlaceholder">Name</div>
-
+                    
                     <input type="text" id="userNameInput">
                     <div class="userNamePlaceholder">User name</div>
                 </div>
                 <input type="text" class="input" id="emailInput">
                 <div class="emailPlaceholder">Email</div>
-                <input type="text" class="input" id="phoneInput">
+                <input type="number" class="input" id="phoneInput" max="13">
                 <div class="phonePlaceholder">Phone</div>
                 <input type="text" class="input" id="websiteInput">
                 <div class="websitePlaceholder">Website</div>
