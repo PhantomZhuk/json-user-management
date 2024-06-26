@@ -375,3 +375,11 @@
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .addUsersContainer {
+        .formAddUser {
+            padding: 20px 10px;
+        }
+    }
+}
