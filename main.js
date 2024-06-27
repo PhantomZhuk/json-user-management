@@ -428,110 +428,110 @@ $(`#themeBtn`).click(() => {
     }
 });
 
-// let IP;
-// let numberUser = 10;
-// let nameInput, usernameInput, emailInput, phoneInput, websiteInput, companyNameInput, catchPhraseInput, bsInput, streetInput, suiteInput, cityInput, zipcodeInput;
-// let red = `#f84747`;
+let IP;
+let numberUser = 10;
+let nameInput, usernameInput, emailInput, phoneInput, websiteInput, companyNameInput, catchPhraseInput, bsInput, streetInput, suiteInput, cityInput, zipcodeInput;
+let red = `#f84747`;
 
-// axios.get(`https://api.ipify.org`).then(res => {
-//     IP = res.data;
+axios.get(`https://api.ipify.org`).then(res => {
+    IP = res.data;
 
-//     axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=71a41c0317b3472da4e0ac6049f905c9&ip=${IP}`).then(res => {
-//         let geoData = res.data;
+    axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=71a41c0317b3472da4e0ac6049f905c9&ip=${IP}`).then(res => {
+        let geoData = res.data;
 
-//         let validateInput = (selector, minLen) => {
-//             let input = $(selector);
-//             if (input.val().length > minLen) {
-//                 input.css(`border`, `2px solid #29ef3d`);
-//                 input.siblings('label').css(`color`, `#29ef3d`);
-//                 return true;
-//             } else {
-//                 input.css(`border`, `2px solid ${red}`);
-//                 input.siblings('label').css(`color`, `${red}`);
-//                 return false;
-//             }
-//         };
+        let validateInput = (selector, minLen) => {
+            let input = $(selector);
+            if (input.val().length > minLen) {
+                input.css(`border`, `2px solid #29ef3d`);
+                input.siblings('label').css(`color`, `#29ef3d`);
+                return true;
+            } else {
+                input.css(`border`, `2px solid ${red}`);
+                input.siblings('label').css(`color`, `${red}`);
+                return false;
+            }
+        };
 
-//         $(`#addUser`).click(() => {
-//             nameInput = validateInput(`#nameInput`, 3);
-//             usernameInput = validateInput(`#userNameInput`, 3);
-//             emailInput = validateInput(`#emailInput`, 15);
-//             phoneInput = validateInput(`#phoneInput`, 11);
-//             websiteInput = validateInput(`#websiteInput`, 5);
-//             companyNameInput = validateInput(`#companyNameInput`, 3);
-//             catchPhraseInput = validateInput(`#catchPhraseInput`, 2);
-//             bsInput = validateInput(`#bsInput`, 2);
-//             streetInput = validateInput(`#streetInput`, 3);
-//             suiteInput = validateInput(`#suiteInput`, 2);
-//             cityInput = validateInput(`#cityInput`, 3);
-//             zipcodeInput = validateInput(`#zipcodeInput`, 2);
+        $(`#addUser`).click(() => {
+            nameInput = validateInput(`#nameInput`, 3);
+            usernameInput = validateInput(`#userNameInput`, 3);
+            emailInput = validateInput(`#emailInput`, 15);
+            phoneInput = validateInput(`#phoneInput`, 11);
+            websiteInput = validateInput(`#websiteInput`, 5);
+            companyNameInput = validateInput(`#companyNameInput`, 3);
+            catchPhraseInput = validateInput(`#catchPhraseInput`, 2);
+            bsInput = validateInput(`#bsInput`, 2);
+            streetInput = validateInput(`#streetInput`, 3);
+            suiteInput = validateInput(`#suiteInput`, 2);
+            cityInput = validateInput(`#cityInput`, 3);
+            zipcodeInput = validateInput(`#zipcodeInput`, 2);
 
-//             if (nameInput && usernameInput && emailInput && phoneInput && websiteInput && companyNameInput && catchPhraseInput && bsInput && streetInput && suiteInput && cityInput && zipcodeInput) {
-//                 let data = {
-//                     "id": numberUser++,
-//                     "name": $(`#nameInput`).val(),
-//                     "username": $(`#userNameInput`).val(),
-//                     "email": $(`#emailInput`).val(),
-//                     "address": {
-//                         "street": $(`#streetInput`).val(),
-//                         "suite": $(`#suiteInput`).val(),
-//                         "city": $(`#cityInput`).val(),
-//                         "zipcode": $(`#zipcodeInput`).val(),
-//                         "geo": {
-//                             "lat": geoData.latitude,
-//                             "lng": geoData.longitude
-//                         }
-//                     },
-//                     "phone": $(`#phoneInput`).val(),
-//                     "website": $(`#websiteInput`).val(),
-//                     "company": {
-//                         "name": $(`#companyNameInput`).val(),
-//                         "catchPhrase": $(`#catchPhraseInput`).val(),
-//                         "bs": $(`#bsInput`).val()
-//                     }
-//                 };
+            if (nameInput && usernameInput && emailInput && phoneInput && websiteInput && companyNameInput && catchPhraseInput && bsInput && streetInput && suiteInput && cityInput && zipcodeInput) {
+                let data = {
+                    "id": numberUser++,
+                    "name": $(`#nameInput`).val(),
+                    "username": $(`#userNameInput`).val(),
+                    "email": $(`#emailInput`).val(),
+                    "address": {
+                        "street": $(`#streetInput`).val(),
+                        "suite": $(`#suiteInput`).val(),
+                        "city": $(`#cityInput`).val(),
+                        "zipcode": $(`#zipcodeInput`).val(),
+                        "geo": {
+                            "lat": geoData.latitude,
+                            "lng": geoData.longitude
+                        }
+                    },
+                    "phone": $(`#phoneInput`).val(),
+                    "website": $(`#websiteInput`).val(),
+                    "company": {
+                        "name": $(`#companyNameInput`).val(),
+                        "catchPhrase": $(`#catchPhraseInput`).val(),
+                        "bs": $(`#bsInput`).val()
+                    }
+                };
 
-//                 axios.post(`https://jsonplaceholder.typicode.com/users`, data).then(res => {
-//                     $(`.popup`).css(`display`, `flex`);
-//                     setInterval(() => {
-//                         $(`.popup`).css(`display`, `none`);
-//                     }, 3000);
-//                     $(`.UsersContainer`).append(`
-//                         <div class="userItem">
-//                             <div class="userIconContainer">
-//                                 <div class="userIcon">
-//                                     <i class="fa-solid fa-user"></i>
-//                                 </div>
-//                             </div>
-//                             <p><span class="greenColor">Name</span>: ${res.data.name}</p>
-//                             <p><span class="greenColor">User name</span>: ${res.data.username}</p>
-//                             <p><span class="greenColor">Email</span>: ${res.data.email}</p>
-//                             <div class="addressBtn">
-//                                 <p><span class="greenColor">Address</span></p>
-//                                 <i class="fa-solid close fa-caret-down" id="addressBtn${res.data.id}"></i>
-//                             </div>
-//                             <div class="addressContainer" id="addressCon${res.data.id}">
-//                                 <p><span class="greenColor">Street</span>: ${res.data.address.street}</p>
-//                                 <p><span class="greenColor">Suite</span>: ${res.data.address.suite}</p>
-//                                 <p><span class="greenColor">City</span>: ${res.data.address.city}</p>
-//                                 <p><span class="greenColor">Zipcode</span>: ${res.data.address.zipcode}</p>
-//                                 <p><span class="greenColor">Geo</span>: lat: ${res.data.address.geo.lat} lng: ${res.data.address.geo.lng}</p>
-//                             </div>
-//                             <p><span class="greenColor">Phone</span>: ${res.data.phone}</p>
-//                             <p><span class="greenColor">Website</span>: ${res.data.website}</p>
-//                             <div class="companyBtn">
-//                                 <p><span class="greenColor">Company</span></p>
-//                                 <i class="fa-solid close fa-caret-down" id="companyBtn${res.data.id}"></i>
-//                             </div>
-//                             <div class="companyContainer" id="companyCon${res.data.id}">
-//                                 <p><span class="greenColor">Name</span>: ${res.data.company.name}</p>
-//                                 <p><span class="greenColor">CatchPhrase</span>: ${res.data.company.catchPhrase}</p>
-//                                 <p><span class="greenColor">BS</span>: ${res.data.company.bs}</p>
-//                             </div>
-//                         </div>
-//                     `);
-//                 });
-//             }
-//         });
-//     });
-// });
+                axios.post(`https://jsonplaceholder.typicode.com/users`, data).then(res => {
+                    $(`.popup`).css(`display`, `flex`);
+                    setInterval(() => {
+                        $(`.popup`).css(`display`, `none`);
+                    }, 3000);
+                    $(`.UsersContainer`).append(`
+                        <div class="userItem">
+                            <div class="userIconContainer">
+                                <div class="userIcon">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                            </div>
+                            <p><span class="greenColor">Name</span>: ${res.data.name}</p>
+                            <p><span class="greenColor">User name</span>: ${res.data.username}</p>
+                            <p><span class="greenColor">Email</span>: ${res.data.email}</p>
+                            <div class="addressBtn">
+                                <p><span class="greenColor">Address</span></p>
+                                <i class="fa-solid close fa-caret-down" id="addressBtn${res.data.id}"></i>
+                            </div>
+                            <div class="addressContainer" id="addressCon${res.data.id}">
+                                <p><span class="greenColor">Street</span>: ${res.data.address.street}</p>
+                                <p><span class="greenColor">Suite</span>: ${res.data.address.suite}</p>
+                                <p><span class="greenColor">City</span>: ${res.data.address.city}</p>
+                                <p><span class="greenColor">Zipcode</span>: ${res.data.address.zipcode}</p>
+                                <p><span class="greenColor">Geo</span>: lat: ${res.data.address.geo.lat} lng: ${res.data.address.geo.lng}</p>
+                            </div>
+                            <p><span class="greenColor">Phone</span>: ${res.data.phone}</p>
+                            <p><span class="greenColor">Website</span>: ${res.data.website}</p>
+                            <div class="companyBtn">
+                                <p><span class="greenColor">Company</span></p>
+                                <i class="fa-solid close fa-caret-down" id="companyBtn${res.data.id}"></i>
+                            </div>
+                            <div class="companyContainer" id="companyCon${res.data.id}">
+                                <p><span class="greenColor">Name</span>: ${res.data.company.name}</p>
+                                <p><span class="greenColor">CatchPhrase</span>: ${res.data.company.catchPhrase}</p>
+                                <p><span class="greenColor">BS</span>: ${res.data.company.bs}</p>
+                            </div>
+                        </div>
+                    `);
+                });
+            }
+        });
+    });
+});
